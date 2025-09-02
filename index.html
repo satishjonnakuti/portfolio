@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satish | Data Analyst</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #121212; color: #e0e0e0; line-height: 1.6; }
+    
+    /* Header */
+    header { 
+      background: linear-gradient(135deg, #0077cc, #004080); 
+      color: white; 
+      text-align: center; 
+      padding: 3rem 1rem; 
+    }
+    header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; opacity: 0.9; }
+
+    /* Navbar */
+    nav { 
+      display: flex; 
+      justify-content: center; 
+      gap: 20px; 
+      background: #1e1e1e; 
+      padding: 1rem; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5); 
+      position: sticky; 
+      top: 0; 
+      z-index: 100; 
+    }
+    nav a { 
+      text-decoration: none; 
+      color: #66b3ff; 
+      font-weight: 500; 
+      transition: 0.3s; 
+    }
+    nav a:hover { color: #ffffff; }
+
+    /* Sections */
+    section { max-width: 1100px; margin: auto; padding: 3rem 2rem; }
+    h2 { font-size: 2rem; color: #66b3ff; margin-bottom: 1.5rem; text-align: center; }
+
+    /* About */
+    #about p { max-width: 800px; margin: auto; text-align: center; font-size: 1.1rem; }
+
+    /* Portfolio & Blog Grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .card { 
+      background: #1e1e1e; 
+      border-radius: 12px; 
+      padding: 1.5rem; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6); 
+      transition: transform 0.2s ease, background 0.3s; 
+    }
+    .card:hover { transform: translateY(-5px); background: #252525; }
+    .card h3 { color: #66b3ff; margin-bottom: 0.5rem; }
+    .card p { margin-bottom: 1rem; }
+    .card a { 
+      display: inline-block; 
+      text-decoration: none; 
+      background: #0077cc; 
+      color: white; 
+      padding: 0.5rem 1rem; 
+      border-radius: 6px; 
+      transition: 0.3s; 
+    }
+    .card a:hover { background: #004080; }
+
+    /* Contact */
+    #contact p { text-align: center; margin: 0.5rem 0; }
+    #contact a { color: #66b3ff; text-decoration: none; font-weight: 500; }
+    #contact a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer { background: #000; color: #aaa; text-align: center; padding: 1rem; margin-top: 2rem; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Satish Jonnakuti</h1>
+    <p>Data Analyst | SQL | Power BI | Tableau | Python</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a Data Analyst with 5+ years of experience helping businesses transform raw data into actionable insights. Skilled in SQL, Power BI, Tableau, and Python for data wrangling, visualization, and advanced analytics. I enjoy solving complex problems and building data-driven solutions.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Sales Dashboard (Power BI)</h3>
+        <p>Interactive sales dashboard tracking KPIs, revenue trends, and regional performance.</p>
+        <a href="https://github.com/satishjonnakuti/sales-dashboard" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>SQL Query Optimization</h3>
+        <p>Improved query performance by 60% using indexing and query restructuring.</p>
+        <a href="https://github.com/satishjonnakuti/sql-projects" target="_blank">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Customer Segmentation (Python)</h3>
+        <p>Clustered customers using K-means and RFM analysis for targeted marketing.</p>
+        <a href="https://github.com/satishjonnakuti/python-ml-projects" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Optimizing SQL Joins</h3>
+        <p>Tips and tricks to write efficient SQL queries that run faster on large datasets.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card">
+        <h3>Power BI vs Tableau</h3>
+        <p>A deep dive into strengths, weaknesses, and use cases of two leading BI tools.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="card">
+        <h3>Python for Data Wrangling</h3>
+        <p>How to clean, transform, and analyze messy datasets with pandas.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:satishjonnakuti123@gmail.com">satishjonnakuti123@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/satishjonnakuti" target="_blank">github.com/satishjonnakuti</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Satish Jonnakuti | Built with ❤️ using GitHub Pages</p>
+  </footer>
+</body>
+</html>
