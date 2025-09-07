@@ -1,1 +1,1 @@
-# No runtime dependencies required
+flask>=3.0.0

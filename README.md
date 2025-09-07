@@ -2,6 +2,15 @@
 
 A simple Python command-line app to manage your to-do list. Tasks are stored in a JSON file in your user data directory by default, or at a custom path via `--db`.
 
+### Web App
+
+You can also run a small Flask web UI that uses the same JSON storage.
+
+```bash
+python -m todo_cli.web --help
+python -m todo_cli.web --db /workspace/todos.json --host 0.0.0.0 --port 8000 --debug
+```
+
 ### Install / Run
 
 Use directly with Python:
