@@ -1,0 +1,39 @@
+:root {
+	--bg: #0b0f14;
+	--fg: #e5e7eb;
+	--muted: #9aa4b2;
+	--card: #111827;
+	--border: #1f2937;
+	--primary: #22c55e;
+	--danger: #ef4444;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background: var(--bg); color: var(--fg); }
+
+.container { max-width: 720px; margin: 0 auto; padding: 24px; }
+h1 { margin: 0 0 16px; font-size: 24px; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.row { display: flex; gap: 8px; }
+label { display: block; margin-bottom: 8px; color: var(--muted); font-size: 14px; }
+input[type="text"] { flex: 1; padding: 10px 12px; border-radius: 6px; border: 1px solid var(--border); background: #0e1522; color: var(--fg); }
+button, .btn { padding: 10px 14px; border-radius: 6px; border: 1px solid var(--border); background: #0e1522; color: var(--fg); cursor: pointer; text-decoration: none; display: inline-block; }
+button:hover, .btn:hover { border-color: var(--muted); }
+.btn.danger { border-color: var(--danger); color: var(--danger); }
+
+.tabs { display: flex; gap: 8px; margin-bottom: 8px; }
+.tab { color: var(--muted); text-decoration: none; padding: 6px 10px; border-radius: 6px; border: 1px solid transparent; }
+.tab.active { color: var(--fg); border-color: var(--border); background: var(--card); }
+
+.list { list-style: none; margin: 0; padding: 0; }
+.list-item { display: flex; align-items: center; gap: 10px; padding: 12px; border-bottom: 1px solid var(--border); }
+.list-item:last-child { border-bottom: none; }
+.inline { display: inline; }
+.check { width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; border-color: var(--muted); }
+.check.done { border-color: var(--primary); color: var(--primary); }
+.title { flex: 1; }
+.title.completed { color: var(--muted); text-decoration: line-through; }
+.actions { display: flex; gap: 8px; }
+.empty { padding: 16px; color: var(--muted); }
+
