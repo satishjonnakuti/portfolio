@@ -1,3 +1,53 @@
+## To-Do CLI
+
+A simple Python command-line app to manage your to-do list. Tasks are stored in a JSON file in your user data directory by default, or at a custom path via `--db`.
+
+### Install / Run
+
+Use directly with Python:
+
+```bash
+python -m todo_cli --help
+```
+
+Optionally, install in editable mode:
+
+```bash
+pip install -e .
+```
+
+### Usage
+
+```bash
+# Add tasks
+python -m todo_cli add "Buy milk"
+python -m todo_cli add "Write report"
+
+# List pending (default)
+python -m todo_cli list
+
+# List all
+python -m todo_cli list --all
+
+# Mark done / undone
+python -m todo_cli done 1
+python -m todo_cli undone 1
+
+# Edit title
+python -m todo_cli edit 2 "Write Q3 report"
+
+# Delete
+python -m todo_cli delete 1
+
+# Use a custom database path
+python -m todo_cli --db /tmp/todos.json list --all
+```
+
+### Data Location
+
+- Linux/macOS: `$XDG_DATA_HOME/todo_cli/todos.json` or `~/.todo_cli/todos.json`
+- Override with `--db` to specify a path.
+
 # 📊 Satish Jonnakuti - Data Analyst Portfolio
 
 Welcome to my portfolio website! 🚀  
